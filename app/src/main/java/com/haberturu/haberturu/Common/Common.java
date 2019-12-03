@@ -8,7 +8,7 @@ import com.haberturu.haberturu.Remote.RetrofitClient;
 public class Common {
 
     private static final String BASE_URL = "https://newsapi.org/";
-    public static final String  API_KEY = "1f7e41099f9b49ad9bf3e09cec9abfee";
+    public static final String  API_KEY = "API KEY HERE";
 
     public static HaberService getHaberService() {
 
