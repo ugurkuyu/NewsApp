@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_list_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7e7e7"
+    tools:context=".ListNews">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/list_news_image_first"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <ImageView
+            android:id="@+id/bottom_bg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@id/list_news_image_first"
+            android:src="@drawable/ic_bottom_bg" />
+
+        <TextView
+            android:id="@+id/list_news_title_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_news_image_first"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/rubik_regular"
+            android:paddingRight="5dp"
+            android:paddingBottom="20dp"
+            android:text="Title"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_news_source_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_news_image_first"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="Kaynak"
+            android:fontFamily="@font/rubik_light_italic"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/space_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/list_news_image_first"
+            android:background="#eee"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="Diğer Haberler"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_news_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/space_tv" />
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/timestamp_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_news_image_first"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/rubik_light_italic"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

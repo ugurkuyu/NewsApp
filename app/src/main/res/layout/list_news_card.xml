@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/list_news_image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+
+        <ImageView
+            android:id="@+id/bottom_bg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@id/list_news_image"
+            android:src="@drawable/ic_bottom_bg" />
+
+        <TextView
+            android:id="@+id/list_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_news_image"
+            android:fontFamily="@font/rubik_regular"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="20dp"
+            android:text="Title"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_news_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_news_image"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="Kaynak"
+            android:fontFamily="@font/rubik_light_italic"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_news_image"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:fontFamily="@font/rubik_light_italic"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

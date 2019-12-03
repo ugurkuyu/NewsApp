@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_array">
+        <item>https://www.ahaber.com.tr/rss/anasayfa.xml</item>
+        <item>https://www.haberturk.com/rss/manset.xml</item>
+        <item>https://www.haberturk.com/rss</item>
+    </string-array>
+</resources>
